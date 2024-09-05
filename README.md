@@ -8,8 +8,11 @@ Customer Lifetime Value (CLV) is known as an important concept in marketing and 
 
 
 ### Procedure
-- Preprocessing the dataset 
+- Preprocessing the dataset
+- Deciding on the loss function and the model architecture
+- Train the model
+- Inference
 
 
 
-### Further considerations
+### Further considerations (TBA)
