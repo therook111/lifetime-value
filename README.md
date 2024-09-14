@@ -14,7 +14,7 @@ Customer Lifetime Value (CLV) is known as an important concept in marketing and 
 - Inference
 
 ### Dataset
-- We have selected the ### [Kaggle Acquire Valued Shoppers Challenge Dataset](https://www.kaggle.com/c/acquire-valued-shoppers-challenge/data) as our dataset. The dataset has 350 million rows of anonymous transactions from 300k shoppers.
+- We have selected the [Kaggle Acquire Valued Shoppers Challenge Dataset](https://www.kaggle.com/c/acquire-valued-shoppers-challenge/data) as our dataset. The dataset has 350 million rows of anonymous transactions from 300k shoppers.
 - The preprocessing of the dataset is as follows:
   + Prepare csv files for top 25 companies with the most transactions.
 
