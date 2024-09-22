@@ -3,7 +3,7 @@
 ### Background:
 Customer Lifetime Value (CLV) is known as an important concept in marketing and management of organizations to increase the captured profitability. Total value that a customer produces during his/her lifetime is named customer lifetime value. Accurate predictions of customers' future lifetime value (LTV) given their attributes and past purchase behavior enables a more customer-centric marketing strategy. Marketers can segment customers into various buckets based on the predicted LTV and, in turn, customize marketing messages or advertising copies to serve customers in these different segments better. 
 
-Disclaimer: This repository is a PyTorch implementation of the Wang, Xiaojing, Liu, Tianqi, and Miao, Jingang. (2019). [A Deep Probabilistic Model for Customer Lifetime Value Prediction ](https://arxiv.org/abs/1912.07753)
+Disclaimer: This repository is essentially a PyTorch implementation of the Wang, Xiaojing, Liu, Tianqi, and Miao, Jingang. (2019). [A Deep Probabilistic Model for Customer Lifetime Value Prediction ](https://arxiv.org/abs/1912.07753)
 
 **Algorithm used**: Deep Neural Network
 
@@ -17,8 +17,13 @@ Disclaimer: This repository is a PyTorch implementation of the Wang, Xiaojing, L
 ### Dataset
 - We have selected the [Kaggle Acquire Valued Shoppers Challenge Dataset](https://www.kaggle.com/c/acquire-valued-shoppers-challenge/data) as our dataset. The dataset has 350 million rows of anonymous transactions from 300k shoppers.
 - The preprocessing of the dataset is as follows:
-  + Preprocess the dataset using various techniques (To be specified later.)
-  + Only include specific companies in the top 20 companies with the most amount of transactions into the model.
+  + We only take entries with positive purchase amounts as negative indicates product returns.
+  + We transformed the dataset to be from transactions-centric to customer-centric, since we're modelling the customer's LTV.
+  + Included a column for calibration value - The total value of the customer's first day purchases
+  + Included a column for holdout value - The total value of the customer's 1 year period after the first day. The paper mentioned that performance deterioriates after the one-year mark, so we decided 1-year as our cutoff.
+  + We then perform these steps on specific companies in the top 20 companies with the largest amount of transactions and we're only going to model the LTV for these companies.
+    
+
 
 ### How to use?
 
