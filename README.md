@@ -20,8 +20,9 @@ Disclaimer: This repository is essentially a PyTorch implementation of the Wang,
   + We only take entries with positive purchase amounts as negative indicates product returns.
   + We transformed the dataset to be from transactions-centric to customer-centric, since we're modelling the customer's LTV.
   + Included a column for calibration value - The total value of the customer's first day purchases
-  + Included a column for holdout value - The total value of the customer's 1 year period after the first day. The paper mentioned that performance deterioriates after the one-year mark, so we decided 1-year as our cutoff.
-  + We then perform these steps on specific companies in the top 20 companies with the largest amount of transactions and we're only going to model the LTV for these companies.
+  + Included a column for holdout value - The total value of the customer's 1 year period after the first day. The paper mentioned that performance deterioriates after the one-year mark, so we decided 1-year as our cutoff. **This is the label.**
+  + Applied log transformation on the calibration value to align with the loss function.
+- We then perform these steps on specific companies in the top 20 companies with the largest amount of transactions and we're only going to model the LTV for these companies.
     
 
 
