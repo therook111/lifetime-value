@@ -18,7 +18,7 @@ Disclaimer: This repository is a PyTorch implementation of the Wang, Xiaojing, L
 - We have selected the [Kaggle Acquire Valued Shoppers Challenge Dataset](https://www.kaggle.com/c/acquire-valued-shoppers-challenge/data) as our dataset. The dataset has 350 million rows of anonymous transactions from 300k shoppers.
 - The preprocessing of the dataset is as follows:
   + Preprocess the dataset using various techniques (To be specified later.)
-  + Only include the top 10 companies with the most amount of transactions into the model.
+  + Only include specific companies in the top 20 companies with the most amount of transactions into the model.
 
 ### How to use?
 
