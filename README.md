@@ -5,6 +5,8 @@ Customer Lifetime Value (CLV) is known as an important concept in marketing and 
 
 Disclaimer: This repository is essentially a PyTorch implementation of the Wang, Xiaojing, Liu, Tianqi, and Miao, Jingang. (2019). [A Deep Probabilistic Model for Customer Lifetime Value Prediction ](https://arxiv.org/abs/1912.07753)
 
+We simply made the codebase modular for a more OOP-approach and user-friendly as a learning oppurtunity.
+
 **Algorithm used**: Deep Neural Network
 
 
