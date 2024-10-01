@@ -6,3 +6,5 @@ COMPANIES = [
     '104900040', '105100050', '105150050', '107800070'
 ]
 CATEGORICAL_FEATURES = (['chain', 'dept', 'category', 'brand', 'productmeasure'])
+CHUNK_SIZE = 10**6
+data_dir = 'extracted/transactions.csv'
