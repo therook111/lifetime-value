@@ -3,7 +3,7 @@ from src.utils.constants import CATEGORICAL_FEATURES, NUMERIC_FEATURES
 import numpy as np
 import torch
 import pandas as pd
-from src.utils.loss import calculate_predictions
+from src.modeling.loss import calculate_predictions
 
 def embedding_dim(vocab_size):
     return int(vocab_size**0.25) + 1
