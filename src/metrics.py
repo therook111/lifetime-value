@@ -125,6 +125,7 @@ def spearmanr(x1: Sequence[float], x2: Sequence[float]) -> float:
 
 
 def get_metric_report(y_true, y_pred, y0_true, company=None):
+    y_pred = y_pred.numpy().flatten() #Tensor data type to numpy array
     gini = gini_from_gain(y_true, y_pred, y0_true)
     df_decile = decile_stats(y_true, y_pred)
     spearman = spearmanr(y_true, y_pred)
