@@ -33,9 +33,9 @@ We simply made the codebase modular for a more OOP-approach and user-friendly as
 - First-off, make sure you have your Kaggle API in the form of `kaggle.json` in your working directory. If you don't have, visit [this site](https://www.kaggle.com/settings/account) and scroll down to find "Create New Token"
 
 - Clone this repository by running
-  '''
+  ```
   git clone https://github.com/pilgrimwanderer/ML1_group_8.git
-  '''
+  ```
 
 - Install the necessary libraries by using
   ```
