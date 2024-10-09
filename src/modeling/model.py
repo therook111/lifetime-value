@@ -3,6 +3,7 @@ from src.utils.constants import CATEGORICAL_FEATURES, NUMERIC_FEATURES
 import numpy as np
 import torch
 import pandas as pd
+from src.utils.loss import calculate_predictions
 
 def embedding_dim(vocab_size):
     return int(vocab_size**0.25) + 1
@@ -65,3 +66,13 @@ class DNNModel(nn.Module):
 
         deep_input = torch.cat([numeric_input] + embedding_outputs, dim=1)
         return self.deep_model(deep_input)
+        
+    def predict(self, validation_dataloader):
+        self.eval()
+        logits = []
+        with torch.no_grad():
+            for batch, (features, label) in enumerate(validation_dataloader):
+                outputs = self.forward(features)
+                logits.append(outputs)
+        logits = torch.cat(logits)
+        return calculate_predictions(logits)
