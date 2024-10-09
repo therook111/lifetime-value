@@ -33,10 +33,14 @@ We simply made the codebase modular for a more OOP-approach and user-friendly as
 - First-off, make sure you have your Kaggle API in the form of `kaggle.json` in your working directory. If you don't have, visit [this site](https://www.kaggle.com/settings/account) and scroll down to find "Create New Token"
 
 - Install the necessary libraries by using
-  ``` pip install -r requirements.txt ```
+  ```
+  pip install -r requirements.txt
+  ```
 
 - In your terminal, run
-  ``` !python src/utils/download_data.py ```
+  ```
+  !python src/utils/download_data.py
+  ```
   This will download the data, and make necessary preparations for the following steps.
 
 - Follow the steps in our `example_usage.ipynb` Jupyter notebook to train the model.
