@@ -42,11 +42,12 @@ We simply made the codebase modular for a more OOP-approach and user-friendly as
   pip install -r requirements.txt
   ```
 
-- In your terminal, run
+- (OPTIONAL) If you do not wish to use the pre-processed data, run the command:
   ```
   !python src/utils/download_data.py
   ```
   This will download the data, and make necessary preparations for the following steps.
+
 
 - Follow the steps in our `example_usage.ipynb` Jupyter notebook to train the model.
 
