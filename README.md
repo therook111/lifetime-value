@@ -30,8 +30,6 @@ We simply made the codebase modular for a more OOP-approach and user-friendly as
 
 ### How to use?
 
-- First-off, make sure you have your Kaggle API in the form of `kaggle.json` in your working directory. If you don't have, visit [this site](https://www.kaggle.com/settings/account) and scroll down to find "Create New Token"
-
 - Clone this repository by running
   ```
   git clone https://github.com/pilgrimwanderer/ML1_group_8.git
@@ -42,10 +40,12 @@ We simply made the codebase modular for a more OOP-approach and user-friendly as
   pip install -r requirements.txt
   ```
 
-- (OPTIONAL) If you do not wish to use the pre-processed data, run the command:
-  ```
-  !python src/utils/download_data.py
-  ```
+- (OPTIONAL) If you do not wish to use the pre-processed data, do the following steps:
+   + First-off, make sure you have your Kaggle API in the form of `kaggle.json` in your working directory. If you don't have, visit [this site](https://www.kaggle.com/settings/account) and scroll down to find "Create New Token"
+   + Run the following command: 
+      ```
+      !python src/utils/download_data.py
+      ```
   This will download the data, and make necessary preparations for the following steps.
 
 
