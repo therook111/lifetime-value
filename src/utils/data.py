@@ -51,7 +51,7 @@ class CustomerDataset(Dataset):
                   if key not in NUMERIC_FEATURES}
         
         for feature in NUMERIC_FEATURES:
-            sample[feature] = torch.tensor(self.features[feature][idx], dtype=torch.float).unsqueeze(0)
+            sample[feature] = torch.tensor(self.features[feature][idx], dtype=torch.float32).unsqueeze(0)
         
         if self.label is not None:
             label = self.label[idx]
