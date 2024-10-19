@@ -54,7 +54,7 @@ class CustomerDataset(Dataset):
             sample[feature] = torch.tensor(self.features[feature][idx], dtype=torch.float32).unsqueeze(0)
         
         if self.label is not None:
-            label = torch.tensor(self.label[idx], dtype=torch.float32).unsqueeze(0)
+            label = torch.tensor(self.label[idx], dtype=torch.float32)
             return sample, label
         else:
             return sample 
