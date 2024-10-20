@@ -14,6 +14,8 @@ def calculate_predictions(logits: torch.Tensor) -> torch.Tensor:
     Returns:
       preds: [batch_size, 1] tensor of predicted mean.
     """
+    if logits.shape[1] == 1:
+        return logits
 
     logits = logits.to(dtype=torch.float32)
 
