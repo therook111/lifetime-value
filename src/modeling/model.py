@@ -75,9 +75,4 @@ class DNNModel(nn.Module):
                 outputs = self.forward(features)
                 logits.append(outputs)
         logits = torch.cat(logits)
-        if self.output_units == 3:   
-            return calculate_predictions(logits)
-        elif self.output_units == 1:
-            return logits
-        else:
-            raise KeyError(f"Expected output_units to be 1 or 3. Got {self.output_units} instead.")
+        return calculate_predictions(logits)
