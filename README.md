@@ -1,11 +1,5 @@
-# TOPIC: Customer Lifetime Value Prediction utilizing Deep Neural Network
+PyTorch implementation of the Wang, Xiaojing, Liu, Tianqi, and Miao, Jingang. (2019). [A Deep Probabilistic Model for Customer Lifetime Value Prediction ].(https://arxiv.org/abs/1912.07753)
 
-### Background:
-Customer Lifetime Value (CLV) is known as an important concept in marketing and management of organizations to increase the captured profitability. Total value that a customer produces during his/her lifetime is named customer lifetime value. Accurate predictions of customers' future lifetime value (LTV) given their attributes and past purchase behavior enables a more customer-centric marketing strategy. Marketers can segment customers into various buckets based on the predicted LTV and, in turn, customize marketing messages or advertising copies to serve customers in these different segments better. 
-
-Disclaimer: This repository is essentially a PyTorch implementation of the Wang, Xiaojing, Liu, Tianqi, and Miao, Jingang. (2019). [A Deep Probabilistic Model for Customer Lifetime Value Prediction ](https://arxiv.org/abs/1912.07753)
-
-We simply made the codebase modular for a more OOP-approach and user-friendly as a learning oppurtunity.
 
 **Algorithm used**: Deep Neural Network
 
@@ -32,7 +26,7 @@ We simply made the codebase modular for a more OOP-approach and user-friendly as
 
 - Clone this repository by running
   ```
-  git clone https://github.com/pilgrimwanderer/ML1_group_8.git
+  git clone https://github.com/therook111/lifetime-value.git
   ```
 
 - Install the necessary libraries by using
